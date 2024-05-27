@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Día de la Madre</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Feliz Día de la Madre</h1>
+        <div class="card">
+            <p id="dedication">Para: <span id="recipient"></span></p>
+            <p id="message">
+                Querida mamá,<br>
+                <span id="personal-message">eres la mejor madre del mundo y te amo con todo mi corazón.</span>
+            </p>
+            <p id="from">Con amor, <span id="sender"></span></p>
+        </div>
+        <form id="personalize-form">
+            <label for="recipient-name">Nombre de mamá:</label>
+            <input type="text" id="recipient-name" placeholder="Escribe el nombre de tu mamá">
+            <label for="sender-name">Tu nombre:</label>
+            <input type="text" id="sender-name" placeholder="Escribe tu nombre">
+            <button type="button" onclick="personalizeCard()">Personalizar</button>
+        </form>
+    </div>
+    <div class="hearts-container" id="hearts-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>
